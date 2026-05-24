@@ -40,7 +40,7 @@ function closedLoopSim(paramIdx)
         etaZerothOrder = 1e-4; % step size for zeroth-order optimization
         etaHybrid = 2.5e-4; % step size for hybrid optimization
         delta = 3e-3; % smoothing parameter
-        const = 5; % constant used in decaying weights; larger -> less accurate
+        const = 1; % constant used in decaying weights; larger -> less accurate
 
         etaES = 5e-4; % step size for extremum seeking
         ap = 5e-2; % amplitude for extremum seeking   
@@ -107,7 +107,7 @@ function closedLoopSim(paramIdx)
         disp(['Error occurred for gray-box FO: ', ME.message]);
     end
 
-    % extremum seeking
+    % % extremum seeking
     [upperBoundES, lowerBoundES, avgResultES] = stochESResponse(problem, esParams, fig);
 
 

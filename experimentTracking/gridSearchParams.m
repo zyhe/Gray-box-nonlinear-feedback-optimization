@@ -20,7 +20,7 @@ coeff_Sigma_m = 5e-4; % coefficient for measurement noise covariance, smaller ->
 sigma_u = 1e-4; % standard deviation of excitation noise
 
 etaHybrid = 5e-4; % step size for gray-box pipeline
-const = 5; % constant used in decaying weights; larger -> less accurate
+const = 1.5; % constant used in decaying weights; larger -> less accurate
 etaES = 2.5e-5; % step size for extremum seeking
 ap = 1e-6; % amplitude for extremum seeking   
 

@@ -28,7 +28,7 @@ function[upperBoundAvgRegHb, lowerBoundAvgRegHb, avgRegretHb, alphaArr] = grayBo
     delta = algParams.delta; % smoothing parameter
 
     % rule of setting alpha_k
-    alpha = @(itr) min(1, const ./ (itr + 1).^(1 / 4));
+    alpha = @(itr) min(1, const ./ (itr + 1).^(1 / 6));
     % alpha = @(itr) (itrCnt-itr).^4./(itr.^4 + (itrCnt-itr).^4);
     % alpha = @(itr) 0*itr;
 

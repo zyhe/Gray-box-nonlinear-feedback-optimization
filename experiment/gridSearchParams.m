@@ -9,14 +9,14 @@ deltaGrid = 3e-3; %[3e-3, 4e-3, 5e-3];
 
 % Fixed parameters
 itrCnt = 4e4;
-numTrial = 30;
+numTrial = 40;
 etaFirstOrder = 5e-4;
 etaFirstOrderIA = 5e-4;
 etaFirstOrderRLS = 5e-4;
 coeff_Sigma_p = 1e-2;
 coeff_Sigma_m = 5e-4;
 sigma_u = 5e-5;
-const = 5;
+const = 1;
 etaES = 5e-4;
 ap = 5e-2;
 

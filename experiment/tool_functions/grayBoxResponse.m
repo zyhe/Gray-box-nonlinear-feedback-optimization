@@ -35,7 +35,7 @@ function [upperBoundHybrid, lowerBoundHybrid, avgResultHybrid, alphaArr] = grayB
     const = algParams.const; % constant used in decaying weights; larger -> less accurate
 
     % Rule of setting alpha_k
-    alpha = @(itr) min(1, const ./ (itr + 1) .^ (2 / 3));
+    alpha = @(itr) min(1, const ./ (itr + 1) .^ (1 / 3));
 
     %% Implementation of gray-box feedback optimization
     fprintf('Start running gray-box FO\n');

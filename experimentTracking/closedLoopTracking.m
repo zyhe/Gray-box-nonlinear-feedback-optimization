@@ -27,7 +27,7 @@ function closedLoopTracking(paramIdx)
         itrCnt = 8e4; % number of iterations
         period = 1e3; % period of the time-varying disturbance
         numInstance = ceil(itrCnt/period); % number of instances
-        numTrial = 3; % number of trials
+        numTrial = 30; % number of trials
 
         etaFirstOrder = 5e-4; % step size for accurate models
         etaFirstOrderIA = 5e-4; % step size for inaccurate models
@@ -39,7 +39,7 @@ function closedLoopTracking(paramIdx)
         etaZerothOrder = 1e-4; % step size for zeroth-order optimization
         etaHybrid = 5e-4; % step size for gray-box pipeline
         delta = 5e-2; % smoothing parameter
-        const = 5; % constant used in decaying weights; larger -> less accurate
+        const = 1.5; % constant used in decaying weights; larger -> less accurate
 
         etaES = 2.5e-5; % step size for extremum seeking
         ap = 1e-6; % amplitude for extremum seeking
